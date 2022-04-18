@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,600&family=Finger+Paint&family=Fredoka:wght@300;400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&family=Rampart+One&family=Righteous&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: 'Fredoka', sans-serif;
+  min-height: 100vh;
+  /* background-image: url("img/algebra-math-numbers.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: darkturquoise;
+  color: white;
+}
+
+/* Header */
+
+.header {
+  background-color: #313458;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1120px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.calculator-item {
+  width: 150px;
+  height: 100px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  transition: all .3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.calculator-item:hover {
+  transform: scale(1.05);
+}
+
+.calculator-item i {
+  font-size: 56px;
+}
+
+.calc-display {
+  width: auto;
+  height: auto;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #3f3369;
+  word-break: break-all;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 56px;
+  overflow: hidden;
+}
+
+.submit-btn {
+  grid-column: 4 / 5;
+  grid-row: 3 / 7;
+  height: auto;
+  background-color: #928950;
+}
+
+.calc-devide i {
+  font-size: 50px;
+}
+
+.numbers {
+  font-size: 48px;
+}
+
+.dot {
+  font-size: 50px;
+}
+
+.clear-all {
+  font-size: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .calculator {
+    width: 100%;
+  }
+  .calculator-item {
+    width: 100%;
+  }
+}
