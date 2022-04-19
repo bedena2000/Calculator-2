@@ -48,6 +48,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 300px repeat(5, 1fr);
   grid-gap: 20px;
+  transform: scale(0.7) translateY(-240px);
 }
 
 .calculator-item {
